@@ -1,0 +1,122 @@
+@media screen and (min-width: 350px){
+body#homepage {
+    background-color: rgba(173, 216, 230, 0.408);
+}
+
+body#highschool {
+    background-color: rgba(99, 182, 99, 0.374);
+}
+
+body#college {
+    background-color: rgba(255, 255, 0, 0.302);
+}
+
+nav li{
+	padding:5px;
+	display: inline;
+	width: 30%;
+    font-size: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family: 'Lucida Grande', "monospace";
+}
+
+nav li a:hover {
+    font-style: italic;
+  }
+
+nav li a:active {
+    font-size: 48px;
+    text-decoration: underline;
+    color: black;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Lucida Grande', "monospace";
+    padding: 12px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    font-family: 'Lucida Grande', "monospace";
+    margin: 8px;
+    text-align: center;
+}
+
+h2{
+    font-size: 24px;
+    font-family: "Lucida Grande", "monospace";
+    padding: 12px;
+    text-align: center;
+}
+
+h3{
+    font-size: 18px;
+    font-family: "Lucida Grande", "monospace";
+    padding: 12px;
+    text-align: center;
+}
+
+ol li {
+    font-family: "Lucida Grande", "monospace";
+    margin: 8px;
+    font-style: oblique;
+    text-align: center;
+    list-style: none;
+}
+
+header{
+    background-color: white;
+    padding: 15px;
+}
+
+img.intro2 {
+    float: right;
+}
+
+div.hs {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: 40% 40%;
+    background-color: rgba(255, 255, 0, 0.275);
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+div.college {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+}
+
+@media screen and (min-width: 750px){
+    div.hs {
+        display: grid;
+        grid-template-columns: 25% 25% 20% 20%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.college {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 750px){
+    div.college {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
