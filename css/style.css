@@ -82,7 +82,7 @@ div.hs {
     display: grid;
     align-self: center;
     justify-self: center;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 50% 50%;
     background-color: rgba(255, 255, 0, 0.275);
     justify-content: space-around;
     align-items: center;
@@ -114,9 +114,10 @@ div.college {
     }
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 1450px){
     div.college {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
+}
