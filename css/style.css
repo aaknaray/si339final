@@ -149,7 +149,7 @@ div.college {
 }
 }
 
-@media screen and (min-width: 776px){
+@media screen and (min-width: 750px){
     div.hs {
         display: grid;
         width: 100%;
@@ -174,7 +174,7 @@ div.college {
     }
 }
 
-@media screen and (min-width: 1120px){
+@media screen and (min-width: 1100px){
     div.college {
         display: flex;
         flex-direction: row;
