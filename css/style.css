@@ -1,21 +1,20 @@
 @media screen and (min-width: 350px){
 body#homepage {
-    background-color: rgba(173, 216, 230, 0.408);
+    background-color: rgba(223, 235, 239, 0.408);
 }
 
 body#highschool {
-    background-color: rgba(99, 182, 99, 0.374);
+    background-color: rgba(196, 238, 196, 0.374);
 }
 
 body#college {
-    background-color: rgba(255, 255, 0, 0.302);
+    background-color: rgba(238, 238, 186, 0.302);
 }
 
 nav li{
-	padding:5px;
+	padding: 8px;
 	display: inline;
-	width: 30%;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 nav li a {
@@ -23,14 +22,51 @@ nav li a {
     font-family: 'Lucida Grande', "monospace";
 }
 
-nav li a:hover {
-    font-style: italic;
+.nav-bar {
+    position: relative;
+    top: 0;
+}
+.skip {
+    transform: translateY(-100%);
+    background-color: white;
+  }
+  
+.skip:focus-within {
+    transform: translateY(0%);
+    background-color: white;
   }
 
-nav li a:active {
-    font-size: 48px;
+.active {
+    color: #000;
     text-decoration: underline;
-    color: black;
+    font-size: 24px;
+}
+.linkedin {
+    padding-left: 16px;
+    margin-left: 10px;
+}
+.intro {
+    float: left;
+    padding: 8px 8px 8px 8px;
+    margin: 10px;
+}
+
+.intro:hover {
+    transform: scale(1.5)
+}
+
+.intro2 {
+    float: right;
+    padding: 8px 8px 8px 8px;
+    margin: 10px;
+}
+
+.intro2:hover {
+    transform: scale(1.5) 
+}
+
+body {
+    margin: 0px;
 }
 
 h1 {
@@ -39,12 +75,15 @@ h1 {
     padding: 12px;
     text-decoration: underline;
     text-align: center;
+    margin: 12px;
 }
 
-p {
+p { 
     font-family: 'Lucida Grande', "monospace";
     margin: 8px;
-    text-align: center;
+    text-align: left;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 h2{
@@ -61,32 +100,43 @@ h3{
     text-align: center;
 }
 
-ol li {
-    font-family: "Lucida Grande", "monospace";
-    margin: 8px;
-    font-style: oblique;
-    text-align: center;
-    list-style: none;
-}
+#footer {
+    position: relative;
+    bottom: 0;
+    padding-left: 16px;
+    margin-left: 10px;
+  }
 
 header{
     background-color: white;
-    padding: 15px;
-}
-
-img.intro2 {
-    float: right;
+    padding: 10px;
 }
 
 div.hs {
     display: grid;
     align-self: center;
     justify-self: center;
-    grid-template-columns: 50% 50%;
-    background-color: rgba(255, 255, 0, 0.275);
+    grid-template-columns: auto auto;
+    background-color: rgba(196, 238, 196, 0.374);
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
+    margin: 0px;
+    padding: 0px;
+    width: 120%;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10 {
+    width: 80%;
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover, .img7:hover, .img8:hover, .img9:hover, .img10:hover {
+    width: 80%;
+    transform: scale(2);
+}
+
+.image1:hover, .image2:hover, .image3:hover, .image4:hover, .image5:hover, .image6:hover, .image7:hover, .image8:hover, .image9:hover {
+    transform: scale(2);
 }
 
 div.college {
@@ -99,12 +149,21 @@ div.college {
 }
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 776px){
     div.hs {
         display: grid;
-        grid-template-columns: 25% 25% 20% 20%;
+        width: 100%;
+        grid-template-columns: auto auto auto;
         justify-content: center;
-        align-items: center;
+        justify-items: center;
+        align-items: start;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .img10 {
+        grid-column: 2;
+        grid-row: 4;
     }
     
     div.college {
@@ -115,10 +174,43 @@ div.college {
     }
 }
 
-@media screen and (min-width: 1450px){
+@media screen and (min-width: 1120px){
     div.college {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        justify-content: center;
     }
+
+
+div.hs {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: center;
+    align-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    padding: auto;
+    margin: auto;
+}
+
+.img7 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.img8 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.img9 {
+    grid-column: 4;
+    grid-row: 2; 
+}
+
+.img10 {
+    grid-column: 5;
+    grid-row: 2;
+}
 }

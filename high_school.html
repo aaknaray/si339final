@@ -3,19 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="html5reset.css">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<title>Aakash Narayan Portfolio</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SS4GTDDKYG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SS4GTDDKYG');
+</script>
 <body id="highschool">
+	<div class="skip"><a tabindex="0" href="#skip">Jump to Content</a></div>
 	<header>
 	  <nav>
 		<ol class="nav-bar">
-			<li class="nav-link"><a href = "index.html">About Me</a></li>
-			<li class="nav-link"><a class="active" href = "high_school.html">High School</a></li>
-			<li class="nav-link"><a href = "college.html">College</a></li>
-			<li class="skip"><a href="#skip">Skip to Content</a></li>
+			<li class="nav-link"><a tabindex="1" href = "index.html">About Me</a></li>
+			<li class="nav-link"><a tabindex="2" class="active" href = "high_school.html">High School</a></li>
+			<li class="nav-link"><a tabindex="3" href = "college.html">College</a></li>
 		</ol>
     </nav>
 	</header>
@@ -23,29 +31,30 @@
 	<main id="skip">
         <h1>Edina High School</h1>
         <br>
-		<div class="hs">
-			<img  src = "images/balsa1.png" alt="balsa wood digital model" width="200"/>
-			<img  src = "images/balsa2.png" alt="balsa wood physical model" width="100"/>
-			<img  src = "images/house3.png" alt="floor plan 1st" width="200"/>
-			<img  src = "images/house4.png" alt="floor plan 2nd" width="200"/>
-			<img  src = "images/house2.png" alt="House interior rendering" width="100"/>
-        	<img  src = "images/house1.png" alt="House exterior rendering" width="200"/>
-			<img  src = "images/columbia4.png" alt="drawing practice" width="200"/>
-        	<img  src = "images/columbia3.png" alt="full project plan" width="200"/>
-        	<img  src = "images/columbia2.png" alt="section 1" width="200"/>
-        	<img  src = "images/columbia1.png" alt="section 2" width="200"/>
+		<div class="hs" tabindex="4">
+			<img  class="img1" src = "images/balsa1.png" alt="balsa wood digital model" width="250"/>
+			<img  class="img2" src = "images/balsa2.png" alt="balsa wood physical model" width="175"/>
+			<img  class="img3" src = "images/house3.png" alt="floor plan 1st" width="250"/>
+			<img  class="img4" src = "images/house4.png" alt="floor plan 2nd" width="250"/>
+			<img  class="img5" src = "images/house2.png" alt="House interior rendering" width="200"/>
+        	<img  <img  class="img6" src = "images/house1.png" alt="House exterior rendering" width="250"/>
+			<img  <img  class="img7" src = "images/columbia4.png" alt="drawing practice" width="250"/>
+        	<img  <img  class="img8" src = "images/columbia3.png" alt="full project plan" width="250"/>
+        	<img  <img  class="img9" src = "images/columbia2.png" alt="section 1" width="250"/>
+        	<img  <img  class="img10" src = "images/columbia1.png" alt="section 2" width="250"/>
 		</div>
-	<h2>Civil Engineering & Architecture</h2>
+	<h2 tabindex="5">Civil Engineering & Architecture</h2>
 		<p>Our Civil Engineering Architecture class was my introduction into the built environment. I really enjoyed working with Revit and Sketchup. I have created a "Practical" Dream House and a Balsa Wood Shed as the primary pieces of work from the course.</p>
     <h3>Learnings</h3>
         <p>Our Civil Engineering Architecture class assignment was to create a “practical” dream house. My intent was to design an open-concept, simplistic layout with modern furnishings. I enjoyed thinking about how to transform the space to make it functional and livable. The contrast of glass and wood textures is a primary focus of my modern exterior.</p>
         <p>Pictured above is also an engineering focused project done in my Civil Engineering Architecture course. The end product turned into a balsa wood model of the simple shed we diagrammed on Revit. It is important because it displayed my ability to work with my hands.</p>
-    <h2>Columbia Summer Immersion</h2>
+    <h2 tabindex="6">Columbia Summer Immersion</h2>
 	<p>I also attended a three-week summer immersion program at Columbia University in New York City to explore the field of architecture further. Here, I worked on architectural hand drawings and created my version of Parc de la Villette off the High Line.</p>
     <h3>Learnings</h3>
         <p>To begin the Columbia University summer program, we used postcards to create our own 3D model and made perspective drawings of them.</p>
         <p>My final project for the Columbia program. The High Line is to the left of the rap battle arena. The stage is shaped like a tree trunk, the branches are suites, shaped as either, squares or triangles. Nature was a heavy influence in the postmodernist design of this space and was used to blend the High Line together with my design. </p>
 	</main>
-	<footer>Aakash Narayan &copy; 2023</footer>
+	<br>
+	<footer id="footer">Aakash Narayan &copy; 2023</footer>
 </body>
 </html>

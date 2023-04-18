@@ -3,37 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="favicon.ico">
-	<link rel="stylesheet" href="html5reset.css">
+	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 	<title>Aakash Narayan Portfolio</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SS4GTDDKYG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SS4GTDDKYG');
+</script>
 <body id="homepage">
+	<div class="skip"><a tabindex="0" href="#skip">Jump to Content</a></div>
 	<header>
-	  <nav>
+	<nav>
 		<ol class="nav-bar">
-			<li class="nav-link"><a class="active" href = "index.html">About Me</a></li>
-			<li class="nav-link"><a href = "high_school.html">High School</a></li>
-			<li class="nav-link"><a href = "college.html">College</a></li>
-			<li class="skip"><a href="#skip">Skip to Content</a></li>
+			<li class="nav-link"><a tabindex="1" class="active" href = "index.html">About Me</a></li>
+			<li class="nav-link"><a tabindex="2" href = "high_school.html">High School</a></li>
+			<li class="nav-link"><a tabindex="3" href = "college.html">College</a></li>
 		</ol>
 	</nav>
 	</header>
 	
 	<main id="skip">
-		<img class = "intro" src = "images/AakashNarayan_headshot.jpg" alt="Aakash picture 2" width="200"/>
-		<img class = "intro2" src = "images/aakash.jpg" alt="Aakash picture" width="200"/>
 		<h1>About Aakash</h1>
 			<p>I am a student at the University of Michigan in the first cohort of the Urban Technology major at Taubman School of Architecture and Urban Planning. Urban Technology is the first bachelor's degree of its kind, lying at the intersection between cities, technology, and design. The program is interdisciplinary, as I take also partake in courses at the School of Information and the Literature, Sciences, and Arts at Michigan. Urban Technology promotes experimental learning while equipping us with a wide variety of technical and soft skills.
+			<img class = "intro2" src = "images/aakash.jpg" alt="Aakash picture" width="175"/>
+			<img class = "intro" src = "images/AakashNarayan_headshot.jpg" alt="Aakash picture 2" width="175"/>
 			<p>I am an ambitious individual, continuously trying to improve my personal and professional abilities to become an impactful leader in our future workforce. I have an unrelenting work ethic and an inquisitive mindset toward the world around me. I enjoy pondering the "big picture", and love to utilize my business acumen to analyze decisions. I have great confidence in my ability to critically think and solve problems.</p>
 			<p>My career interests include Real Estate Development, Property Technology and Consulting. I am incredibly passionate about human-centered thinking, innovation, and influencing change. I am best suited for positions that require strong business acumen to interact with creative technology.</p>
+			<br>
 			<h2>Achievements</h2>
-			<ol>
-				<li>James B. Angell Scholar</li>
-				<li>University Honors</li>
-				<li>Edina High School Junior Book Award</li>
-			</ol>
+			<p>In high school, I won the Edina High School Junior Book Award, given to a dozen students in a six hundred fifty student class. In college, I have received University Honors and the James B. Angell Scholar Award for academic excellence in the classroom.</p>
+			<a class="linkedin" href="https://www.linkedin.com/in/narayan-aakash/" target="_blank">Click to Learn More!</a>
 	</main>
-	<footer>Aakash Narayan &copy; 2023</footer>
+	<br>
+	<footer id="footer">Aakash Narayan &copy; 2023</footer>
 </body>
 </html>
